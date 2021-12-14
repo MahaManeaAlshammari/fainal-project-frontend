@@ -1,0 +1,115 @@
+.login{
+    width: 50%;
+    height: 150px;
+    margin:auto;
+    background-color: rgba(112, 134, 133, 0.678);  
+}
+.login2{
+    padding: 5px;
+    width: 70%;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.signup-3 { 
+    padding: 10px;
+    width: 70%;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 50%;
+    height: 150px;
+    margin:auto;
+    background-color: rgba(112, 134, 133, 0.678);   
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(141, 139, 104, 0.808);
+    height: 100px;
+}
+.all-navbar{
+    /* width: 50%; */
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+    
+#link-nav{
+    color: rgb(223, 219, 213);
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(85, 55, 55, 0.575);
+    border: 1px solid rgb(66, 61, 61);
+
+
+}   
+
+
+.signup{
+    width: 70%;
+    height: 350px;
+    margin: auto;
+    background-color: rgba(235, 230, 230, 0.678); 
+}
+.home{
+    background-color: rgba(230, 218, 218, 0.514);
+    height: 150px;
+    width: 170px;
+    /* margin:inherit; */
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    text-shadow: 0 0 3px #c09393, 0 0 5px #b7d44e;
+
+    font-size: x-large;
+}
+body{
+    background-image: url("https://images.pexels.com/photos/9000159/pexels-photo-9000159.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    /* background-size: cover; */
+}
+/* .p-5{
+    font-size: large;
+} */
+.all-btn{
+    width: 600px;
+    margin: auto;
+    padding: 10px;
+    background-color: rgba(94, 75, 75, 0.705);
+    color: rgb(250, 248, 248);
+    font-size:xx-large;
+}
+.btn-1{
+    /* display: inline-block; */
+    border-radius: 10px;
+    background-color: #99675869;
+    color: #FFFFFF;
+    font-size: 28px;
+    padding: 25px;
+    width: 270px;
+    /* transition: all 0.5s; */
+    cursor: pointer;
+    margin: 5px;
+}
+.btn-2{
+    /* display: inline-block; */
+    border-radius: 10px;
+    padding: 20px;
+    width: 150px;
+    color: #3a2626;
+    font-size: large;
+    background-color: rgba(243, 240, 237, 0.568);
+}
+/* .all-btn-1{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+} */
