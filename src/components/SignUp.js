@@ -1,41 +1,48 @@
 import React, {useState}from 'react'
 import axios from "axios";
-// import  {useEffect , useState} from "react";
-import { useHistory } from 'react-router-dom';
+import {useHistory} from "react-router-dom"
+
 
 export default function Signup() {
 
-    const [inputUsername, setInputUsername] = useState("")
-    const [inputEmail, setInputEmail] = useState("")
-    const [inputPassword, setInputPassword] = useState("")
-    const [bool, setBool] = useState(false)
-    const [message, setMessage] = useState("تم تسجيل حسابك بنجاح , شكرا لك")
-
-    const hestory = useHistory()
-    const onclickSignup = async()=> {
-       try {
-        const response = await axios.post("http://localhost:5000/SignUp" , {
-            name: inputUsername ,
-            email: inputEmail ,
-            password: inputPassword
-        })
-            setBool(true)
-            setTimeout(()=> { 
-                hestory.push("/login")
-                setBool(false)
-            } , 2500)
-    
-       } catch (error) {
-           console.log(error);
-       }
+    const [name, setName] = useState("")
+    const [email, setEmail] = useState("")
+    const [password, setPassword] = useState("")
+// استخدمت يوزهيستوري عشان ياخذ القيمه اللي بالانبوت ويمررها 
+// وتارقت دوت فاليو عشان يغير القيمه وهو يكتب بالانبوت
+    const history = useHistory();
+    const changName = (e) => {
+      setName(e.target.value);
+    };
+    const changEmail = (e) => {
+      setEmail(e.target.value);
+    };
+    const changPassword = (e) => {
+      setPassword(e.target.value);
+    };
+  
+   
+    const onclickSignup = async()=>{
+        const res= await axios.post("http://localhost:5000/signUp", {
+        name , email ,  password
+        // اقدر احط القيمه حقت الكي بدون الكي نفسه اذا كان الكي
+        // والقميه نفس بعض
+      });
+   // سويت شرط انو اذا كان ادخال البيانات صحيح انقل المستخدم الى صفحه اللوق ان
+      if (res.status === 201){
+          history.push("/login")
+      }
     }
     return (
-        <div className='signup-3'>
-        {!bool ? <><input onChange={(e)=>{setInputUsername(e.target.value)}} type="text" placeholder='username' />  
-        <input onChange={(e)=>{setInputEmail(e.target.value)}} type="text" placeholder='email' />
-        <input onChange={(e)=>{setInputPassword(e.target.value)}} type="password" placeholder='password'/>
-        <button onClick={()=> {onclickSignup()}}>signup</button></> :
-         <div className='signup5' style={{fontSize: "20px"}} id='warning-booking-select'>{message}</div>}
+
+        <div  className='signup'>
+          <div className='dd'>  
+        <input className="ptn-inpt" onChange={(e)=>{changName(e)}} placeholder='add name' />  
+        <input className="ptn-inpt" onChange={(e)=>{changEmail(e)}} placeholder='add email' />
+        <input className="ptn-inpt" onChange={(e)=>{changPassword(e)}} placeholder='add password'/>
+        <button className="ptn-inpt" onClick={()=> {onclickSignup()}}>signup</button>
         </div>
+  
+        </div> 
     )
 }

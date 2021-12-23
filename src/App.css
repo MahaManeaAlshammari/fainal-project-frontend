@@ -1,115 +1,109 @@
-.login{
-    width: 50%;
-    height: 150px;
-    margin:auto;
-    background-color: rgba(112, 134, 133, 0.678);  
-}
-.login2{
-    padding: 5px;
-    width: 70%;
-    margin: auto;
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-.signup-3 { 
-    padding: 10px;
-    width: 70%;
-    margin: auto;
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-
-    width: 50%;
-    height: 150px;
-    margin:auto;
-    background-color: rgba(112, 134, 133, 0.678);   
-}
 .navbar{
-    display: flex;
-    justify-content: center;
-    background-color: rgba(141, 139, 104, 0.808);
-    height: 100px;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(235, 226, 99, 0.63);
+  height: 100px;
 }
 .all-navbar{
-    /* width: 50%; */
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
+  /* width: 50%; */
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
 }
-    
-#link-nav{
-    color: rgb(223, 219, 213);
-    font-size: 15px;
-    border-radius: 10px;
-    padding: 10px;
-    background-color: rgba(85, 55, 55, 0.575);
-    border: 1px solid rgb(66, 61, 61);
-
-
+  
+.nav-ptn{
+  color: rgb(250, 250, 248);
+  font-size: 15px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgba(75, 102, 63, 0.664);
+  border: 1px solid rgba(54, 78, 45, 0.842);
 }   
 
 
 .signup{
-    width: 70%;
-    height: 350px;
-    margin: auto;
-    background-color: rgba(235, 230, 230, 0.678); 
+  width: 550px;
+  height: 400px;
+  margin: 20px;
+  background-color: rgba(34, 70, 42, 0.774);
+  margin: auto;
+  border-radius: 20px;
+}
+.ptn-inpt{
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+  text-align: center;
+  margin: 20px;
+  border-radius: 3px;
+  padding: 13px;
+  /* text-decoration-color: ; */
+}
+.dd{
+  margin: 30px;
+  padding: 50px 30px 50px 75px;
 }
 .home{
-    background-color: rgba(230, 218, 218, 0.514);
-    height: 150px;
-    width: 170px;
-    /* margin:inherit; */
-    padding: 10px;
-    text-align: center;
-    margin: auto;
-    margin-top: 10px;
-    text-shadow: 0 0 3px #c09393, 0 0 5px #b7d44e;
+  background-color: rgba(230, 218, 218, 0.514);
+  height: 150px;
+  width: 170px;
+  /* margin:inherit; */
+  padding: 10px;
+  text-align: center;
+  margin: auto;
+  margin-top: 10px;
+  text-shadow: 0 0 3px #c09393, 0 0 5px #b7d44e;
 
-    font-size: x-large;
+  font-size: x-large;
 }
+
 body{
-    background-image: url("https://images.pexels.com/photos/9000159/pexels-photo-9000159.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
-    /* background-size: cover; */
+  background-image: url("https://images.pexels.com/photos/9005384/pexels-photo-9005384.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  /* background-image: url("https://images.pexels.com/photos/9000159/pexels-photo-9000159.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"); */
+  /* background: hsla(244, 64%, 44%, 0.686); */
+  /* background-size: cover; */
 }
 /* .p-5{
-    font-size: large;
+  font-size: large;
 } */
 .all-btn{
-    width: 600px;
-    margin: auto;
-    padding: 10px;
-    background-color: rgba(94, 75, 75, 0.705);
-    color: rgb(250, 248, 248);
-    font-size:xx-large;
+  width: 600px;
+  margin: auto;
+  padding: 10px;
+  background-color: rgba(46, 61, 29, 0.705);
+  color: rgb(250, 248, 248);
+  font-size:xx-large;
 }
 .btn-1{
-    /* display: inline-block; */
-    border-radius: 10px;
-    background-color: #99675869;
-    color: #FFFFFF;
-    font-size: 28px;
-    padding: 25px;
-    width: 270px;
-    /* transition: all 0.5s; */
-    cursor: pointer;
-    margin: 5px;
+  /* display: inline-block; */
+  border-radius: 10px;
+  background-color: #99675869;
+  color: #FFFFFF;
+  font-size: 28px;
+  padding: 25px;
+  width: 270px;
+  /* transition: all 0.5s; */
+  cursor: pointer;
+  margin: 5px;
 }
 .btn-2{
-    /* display: inline-block; */
-    border-radius: 10px;
-    padding: 20px;
-    width: 150px;
-    color: #3a2626;
-    font-size: large;
-    background-color: rgba(243, 240, 237, 0.568);
+  /* display: inline-block; */
+  border-radius: 10px;
+  padding: 20px;
+  width: 150px;
+  color: #3a2626;
+  font-size: large;
+  background-color: rgba(243, 240, 237, 0.568);
 }
 /* .all-btn-1{
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 } */
+@media only screen and (max-width: 900px) {
+  .Home {
+      grid-template-columns: 1fr ;
+      background-color: #d3d626;
+  }
+}

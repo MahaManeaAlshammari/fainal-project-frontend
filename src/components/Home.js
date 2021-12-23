@@ -1,6 +1,6 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom';
-// import { Stack } from 'react-bootstrap';
+import "../App.css"
 
 
 
@@ -10,7 +10,7 @@ export default function Home() {
         hestory.push("/login")
     }
     return (
-        <div>
+        <div className="Home">
             
             <div className="home">
                <p> اهلا بك   </p>
