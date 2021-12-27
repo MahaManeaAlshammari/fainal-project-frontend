@@ -5,7 +5,8 @@ import Login from "./components/Login";
 import React,{useState} from "react";
 import Navbar from "./components/Navbar";
 import Athkar from "./components/Athkar";
-import Home from "./components/Home"
+import Home from "./components/Home";
+import ReedAthkar from "./components/ReedAthkar";
 
 
 
@@ -24,6 +25,11 @@ import Home from "./components/Home"
         <Route exact path= "/Athkar" render={() => {
         return <Athkar token = {token} setToken = {setToken} userId={"userId"}/> }} />
            <Route exact path= "/home" render={() => (<Home />)}/>
+
+           <Route exact path= "/ReedAthkar/:name" render={() => {
+        return <ReedAthkar token = {token}/> }} />
+
+
 
     </div>
   );

@@ -22,6 +22,8 @@ export default function Navbar({token , setToken }) {
             return <>
             <ul><Link className='nav-ptn' to="/login">تسجيل دخول</Link></ul>
             <ul><Link className='nav-ptn' to="/signup">تسجيل</Link></ul>
+            <ul><Link className='nav-ptn' to="/">ADMEN</Link></ul>
+
             </>
         }
     }

@@ -6,9 +6,9 @@ import "../App.css"
 
 export default function Home() {
     const hestory = useHistory()
-    const Login=()=>{
+    // const Login=()=>{
         hestory.push("/login")
-    }
+    // }
     return (
         <div className="Home">
             
