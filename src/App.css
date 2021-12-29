@@ -19,8 +19,6 @@
   background-color: rgba(75, 102, 63, 0.664);
   border: 1px solid rgba(54, 78, 45, 0.842);
 }   
-
-
 .signup{
   width: 550px;
   height: 400px;
@@ -48,15 +46,14 @@
   margin: 30px;
   padding: 50px 30px 50px 75px;
 }
-.home{
+.home-1{
   background-color: rgba(230, 218, 218, 0.514);
+  margin: 50px;
+
   height: 150px;
   width: 170px;
-  /* margin:inherit; */
   padding: 10px;
   text-align: center;
-  /* margin: auto; */
-  /* margin-top: 10px; */
   text-shadow: 0 0 3px #c09393, 0 0 5px #b7d44e;
   font-size: x-large;
   border-radius: 100px;
@@ -109,9 +106,30 @@ body{
   position: relative;
   transition: 0.5s;
 } */
-@media only screen and (max-width: 900px) {
+.name-css{
+  border-radius: 10px;
+  background-color: rgba(243, 240, 237, 0.568);
+  font-size:xx-large;
+  text-align: center;
+
+}
+.counter{
+  background-color: rgba(224, 211, 197, 0.568);
+  text-align: center;
+  border-radius: 7px;
+  margin:auto;
+  color: #255316e7;
+  font-size: 40px;
+}
+.count-{
+  color: #255316e7;
+
+} 
+
+
+@media only screen and (max-width: 550px) {
   .Home {
       grid-template-columns: 1fr ;
-      background-color: #d3d626;
+      background-color: #c5500c;
   }
 }

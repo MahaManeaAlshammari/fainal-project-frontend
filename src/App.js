@@ -7,17 +7,18 @@ import Navbar from "./components/Navbar";
 import Athkar from "./components/Athkar";
 import Home from "./components/Home";
 import ReedAthkar from "./components/ReedAthkar";
+import Counter from "./components/Counter";
 
 
 
 
   export default function App() { 
     const [token, setToken] = useState("")
-    // const [name, setName] = useState("")
-    // const [userId, setUserId] = useState("")
+    
 
   return (
     <div >
+      
         <Navbar token={token} setToken={setToken}/>
         <Route exact path="/login"  render={()=>
            {return <Login setToken={setToken}/> ; }} />
@@ -29,6 +30,8 @@ import ReedAthkar from "./components/ReedAthkar";
            <Route exact path= "/ReedAthkar/:name" render={() => {
         return <ReedAthkar token = {token}/> }} />
 
+      <Route exact path="/Counter" render={() => {
+        return <Counter token = {token}/> }} />
 
 
     </div>

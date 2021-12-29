@@ -3,18 +3,21 @@ import "../App.css"
 import {useHistory} from "react-router-dom";
 
 
-export default function Athkar(token ) {
+export default function Athkar() {
     const history = useHistory()
    
     const bage = async(name)=>{
         history.push(`/ReedAthkar/${name}`)
+      }
+      const bage2 = async(name)=>{
+        history.push(`/${name}`)
       }
 
  
     return (
         <div className='all-btn'>
             <h1>اذكار</h1>
-            <button className='btn-2' >العداد</button>
+            <button onClick={()=>{bage2 ("Counter")}} className='btn-2' >العداد</button>
             <button className='btn-2'>اسماء الله الحسنى</button>
             <button className='btn-2'>من دعاء الرسول</button>
             <button className='btn-2'>ادعيه من القران</button>
@@ -29,6 +32,5 @@ export default function Athkar(token ) {
             <button onClick={()=>{bage ("daily")}} className='btn-1'>الورد اليومي</button>
             <button onClick={()=>{bage ("Prayer")}} className='btn-1'>اذكار الصلاة</button>
             </div>
-           </div>
-            
+           </div>    
       )}

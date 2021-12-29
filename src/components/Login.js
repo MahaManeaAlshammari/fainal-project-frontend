@@ -30,7 +30,7 @@ console.log(response.data)
     //   التوكن عشان ياخذ بيانات المستخدم ويحفظها داخل التوكن
     // بعد ماكانت قيمه التوكن فاضيه
      
-    history.push("/Athkar");
+    history.push("/Home");
     } catch (error) {
       console.log(error.response.data);
     }
@@ -40,7 +40,7 @@ console.log(response.data)
     <div className='dd'>  
       <input className="ptn-inpt" onChange={(e) => {changeEmail(e);}}placeholder="add email"/>
       <input className="ptn-inpt" onChange={(e) => {changePassword(e);}} placeholder="add password"/>
-      <button className="ptn-inpt" onClick={() => {onclickLogin();}}>Login</button>
+      <button className="ptn-inpt" onClick={() => {onclickLogin();}}>تسجيل الدخول</button>
       </div>
     </div>
   );

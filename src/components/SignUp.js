@@ -40,7 +40,7 @@ export default function Signup() {
         <input className="ptn-inpt" onChange={(e)=>{changName(e)}} placeholder='add name' />  
         <input className="ptn-inpt" onChange={(e)=>{changEmail(e)}} placeholder='add email' />
         <input className="ptn-inpt" onChange={(e)=>{changPassword(e)}} placeholder='add password'/>
-        <button className="ptn-inpt" onClick={()=> {onclickSignup()}}>signup</button>
+        <button className="ptn-inpt" onClick={()=> {onclickSignup()}}>سجل الان</button>
         </div>
   
         </div> 
