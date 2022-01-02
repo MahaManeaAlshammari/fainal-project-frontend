@@ -12,12 +12,19 @@ export default function Athkar() {
       const bage2 = async(name)=>{
         history.push(`/${name}`)
       }
+      const bage3 = async(name)=>{
+        history.push(`/${name}`)
+      }
 
  
     return (
         <div className='all-btn'>
             <h1>اذكار</h1>
             <button onClick={()=>{bage2 ("Counter")}} className='btn-2' >العداد</button>
+            <button onClick={()=>{bage3 ("qoran")}} className='btn-2'> قرآن</button>
+            <br></br>
+
+
             <button className='btn-2'>اسماء الله الحسنى</button>
             <button className='btn-2'>من دعاء الرسول</button>
             <button className='btn-2'>ادعيه من القران</button>

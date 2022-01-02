@@ -8,18 +8,19 @@ import Athkar from "./components/Athkar";
 import Home from "./components/Home";
 import ReedAthkar from "./components/ReedAthkar";
 import Counter from "./components/Counter";
+import Qoran from "./components/Qoran"
 
 
 
 
   export default function App() { 
     const [token, setToken] = useState("")
-    
+    const [admin, setAdmin] = useState("")
 
   return (
     <div >
       
-        <Navbar token={token} setToken={setToken}/>
+        <Navbar token={token} setToken={setToken} setAdmin={setAdmin}/>
         <Route exact path="/login"  render={()=>
            {return <Login setToken={setToken}/> ; }} />
         <Route exact path="/signUp" component={SignUp} />
@@ -33,6 +34,8 @@ import Counter from "./components/Counter";
       <Route exact path="/Counter" render={() => {
         return <Counter token = {token}/> }} />
 
+       <Route exact path="/qoran" render={() => {
+        return <Qoran token = {token}/> }} />
 
     </div>
   );

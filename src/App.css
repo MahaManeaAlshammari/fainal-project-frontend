@@ -78,6 +78,8 @@ body{
   background-color: rgba(46, 61, 29, 0.705);
   color: rgb(250, 248, 248);
   font-size:xx-large;
+  text-align: center;
+
 }
 .btn-1{
   /* display: inline-block; */
@@ -125,7 +127,17 @@ body{
   color: #255316e7;
 
 } 
+.qran{
+  background-color: rgba(224, 211, 197, 0.568);
+  font-size:x-large;
+  padding: 120px;
+  width: 590px;
+  height: 140;
+}
+.qran-1{
+  text-align: center; 
 
+}
 
 @media only screen and (max-width: 550px) {
   .Home {

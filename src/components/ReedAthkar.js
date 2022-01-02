@@ -16,7 +16,7 @@ export default function ReedAthkar({ token }) {
           }
         );
         setReedThkr(reed.data);
-        // السيت كل مره تتحدث حسب النيم
+        // السيت كل مره تتحدث حسب 
         console.log("ReedThkr",reedThkr);
       } catch (error) {
         console.log(error);

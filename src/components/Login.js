@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import axios from "axios";
 
-export default function Login({setToken}) {
+export default function Login({setToken ,setAdmin}) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -27,6 +27,7 @@ export default function Login({setToken}) {
       });
 console.log(response.data)
       setToken(response.data.token);
+      
     //   التوكن عشان ياخذ بيانات المستخدم ويحفظها داخل التوكن
     // بعد ماكانت قيمه التوكن فاضيه
      
