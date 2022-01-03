@@ -133,10 +133,17 @@ body{
   padding: 120px;
   width: 590px;
   height: 140;
+  margin: auto;
+  border-radius: 20px;
+
 }
 .qran-1{
-  text-align: center; 
-
+  /* text-align: center;  */
+  font-size:x-large;
+  margin: auto;
+  background-color: rgba(224, 211, 197, 0.568);
+  /* display: flex; */
+  /* justify-content: center; */
 }
 
 @media only screen and (max-width: 550px) {

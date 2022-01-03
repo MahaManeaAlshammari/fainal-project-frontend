@@ -8,7 +8,8 @@ import Athkar from "./components/Athkar";
 import Home from "./components/Home";
 import ReedAthkar from "./components/ReedAthkar";
 import Counter from "./components/Counter";
-import Qoran from "./components/Qoran"
+import Qoran from "./components/Qoran";
+import Favorite from"./components/Favorite"
 
 
 
@@ -37,6 +38,9 @@ import Qoran from "./components/Qoran"
        <Route exact path="/qoran" render={() => {
         return <Qoran token = {token}/> }} />
 
+
+       <Route exact path="/Favorite/:id" render={() => {
+        return <Favorite token = {token}/> }} />
     </div>
   );
 }
