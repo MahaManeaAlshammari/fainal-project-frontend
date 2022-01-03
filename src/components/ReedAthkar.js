@@ -44,7 +44,7 @@ export default function ReedAthkar({ token }) {
     {reedThkr.map((elem,i)=>{
         return(<div>
             <p className="name-css">{elem.description}
-             <button onClick={()=>{addFavorite(elem._id)}}>  ⭐ </button> </p>
+             <button onClick={()=>{addFavorite(elem._id)}}>  📌 </button> </p>
 
         </div>)
     })}

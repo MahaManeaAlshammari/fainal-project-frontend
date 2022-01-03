@@ -9,7 +9,8 @@ import Home from "./components/Home";
 import ReedAthkar from "./components/ReedAthkar";
 import Counter from "./components/Counter";
 import Qoran from "./components/Qoran";
-import Favorite from"./components/Favorite"
+import Favorite from"./components/Favorite";
+import Admin from "./components/Admin";
 
 
 
@@ -39,8 +40,11 @@ import Favorite from"./components/Favorite"
         return <Qoran token = {token}/> }} />
 
 
-       <Route exact path="/Favorite/:id" render={() => {
+       <Route exact path="/Favorite" render={() => {
         return <Favorite token = {token}/> }} />
+
+       <Route exact path="/admin" render={() => {
+        return <Admin token = {token}/> }} />
     </div>
   );
 }

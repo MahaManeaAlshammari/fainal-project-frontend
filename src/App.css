@@ -23,7 +23,8 @@
   width: 550px;
   height: 400px;
   margin: 20px;
-  background-color: rgba(15, 65, 26, 0.774);
+  /* background-color: rgba(15, 65, 26, 0.774); */
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo3v_VzvcchvpwyDreXjlMWmATCIZDsmz4oQ&usqp=CAU");
   margin: auto;
   border-radius: 20px;
   /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOwFkKtwJ-J_cc50KtaX9CAXUe_00DJvQ-mA&usqp=CAU"); */
@@ -61,12 +62,12 @@
 }
 
 body{
-  
-  background-image: url("https://images.pexels.com/photos/9005384/pexels-photo-9005384.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-color: #eee2ab;
+  /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo3v_VzvcchvpwyDreXjlMWmATCIZDsmz4oQ&usqp=CAU"); */
   /* background-image: url("https://images.pexels.com/photos/9000159/pexels-photo-9000159.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"); */
   /* background: hsla(64, 76%, 39%, 0.686); */
-  /* background-size: cover; */
-  /* mask-repeat: no-repeat; */
+  /* background-size: cover; 
+  mask-repeat: no-repeat; */
 }
 /* .p-5{
   font-size: large;
@@ -101,6 +102,10 @@ body{
   color: #3a2626;
   font-size: large;
   background-color: rgba(243, 240, 237, 0.568);
+
+  border-radius: 78px 77px 0px 0px;
+  -webkit-border-radius: 78px 78px 0px 0px;
+  -moz-border-radius: 78px 78px 0px 0px;
 }
 /* .all-btn-1{
   cursor: pointer;
@@ -128,7 +133,10 @@ body{
 
 } 
 .qran{
-  background-color: rgba(224, 211, 197, 0.568);
+  /* background-color: rgba(224, 211, 197, 0.568); */
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo3v_VzvcchvpwyDreXjlMWmATCIZDsmz4oQ&usqp=CAU");
+  /* background-size: cover;  */
+  /* mask-repeat: no-repeat; */
   font-size:x-large;
   padding: 120px;
   width: 590px;
@@ -136,6 +144,9 @@ body{
   margin: auto;
   border-radius: 20px;
 
+  box-shadow: -7px 13px 69px 35px rgba(0,0,0,0.67);
+  -webkit-box-shadow: -7px 13px 69px 35px rgba(0,0,0,0.67);
+  -moz-box-shadow: -7px 13px 69px 35px rgba(0,0,0,0.67);
 }
 .qran-1{
   /* text-align: center;  */
