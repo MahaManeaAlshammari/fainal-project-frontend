@@ -15,14 +15,14 @@ export default function Navbar({token , setToken }) {
             <ul><Link className='nav-ptn' to="/Home">الرئيسية</Link></ul>
             <ul><Link className='nav-ptn' to="/Athkar">اذكار اليوم والليله</Link></ul>
             <ul><Link className='nav-ptn' to="/Favorite">مفضلاتي</Link></ul>
-            <ul></ul>
+            
             <ul><Link className='nav-ptn' onClick={()=>{logout()}}  to="/login">تسجيل خروج</Link></ul>
             </>
         }else{
             return <>
             <ul><Link className='nav-ptn' to="/login">تسجيل دخول</Link></ul>
             <ul><Link className='nav-ptn' to="/signup">تسجيل</Link></ul>
-            <ul><Link className='nav-ptn' to="/">ADMEN</Link></ul>
+            {/* <ul><Link className='nav-ptn' to="/">ADMEN</Link></ul> */}
 
             </>
         }

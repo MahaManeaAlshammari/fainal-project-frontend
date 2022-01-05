@@ -26,7 +26,8 @@ const deletFavorite = async (id) => {
 }
   return (
     <div>
-  {favorite.map((elem,i)=>{
+{      console.log("favorite",favorite)
+}  {favorite.map((elem,i)=>{
       return(<div>
           <p className="name-css">{elem.description}
            <button onClick={()=>{deletFavorite(elem._id)}}>  ❌ </button>  </p>

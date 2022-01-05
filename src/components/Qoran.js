@@ -21,7 +21,7 @@ useEffect(async () => {
        {qoran.map((elem,i)=>{
            return(<div className='q22'>
                <p className='qran'>{elem.description}</p>
-               <a className='qran-1' href={elem.url}>انقر هنا للقراءه</a>
+               <a className='qran-1'target={"_blank"} href={elem.url}>انقر هنا للقراءه</a>
            </div>)
        })}  
         </div>

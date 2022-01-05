@@ -27,24 +27,32 @@ export default function Login({setToken }) {
       });
 console.log(response.data)
       setToken(response.data.token);
-      if (response.data.admin==true) {
-       history.push("/admin") 
+      // if (response.data.admin==true) {
+      //  history.push("/admin") 
         
-      }
-      setToken(response.data.token);
+      // }
+      // setToken(response.data.admin);
 
       
     //   التوكن عشان ياخذ بيانات المستخدم ويحفظها داخل التوكن
     // بعد ماكانت قيمه التوكن فاضيه
      
     history.push("/Home");
+    // if (response.data.admin==true) {
+    //   history.push("/admin") 
+       
+    //  }
+    //  setToken(response.data.admin);
+
+     
     } catch (error) {
       console.log(error.response.data);
     }
   };
   return (
     <div className="signup">
-    <div className='dd'>  
+    <div className='dd'> 
+     
       <input className="ptn-inpt" onChange={(e) => {changeEmail(e);}}placeholder="add email"/>
       <input className="ptn-inpt" onChange={(e) => {changePassword(e);}} placeholder="add password"/>
       <button className="ptn-inpt" onClick={() => {onclickLogin();}}>تسجيل الدخول</button>

@@ -10,14 +10,13 @@ import ReedAthkar from "./components/ReedAthkar";
 import Counter from "./components/Counter";
 import Qoran from "./components/Qoran";
 import Favorite from"./components/Favorite";
-import Admin from "./components/Admin";
 
 
 
 
   export default function App() { 
     const [token, setToken] = useState("")
-    const [admin, setAdmin] = useState("")
+    const [Admin, setAdmin] = useState("")
 
   return (
     <div >
@@ -43,7 +42,7 @@ import Admin from "./components/Admin";
        <Route exact path="/Favorite" render={() => {
         return <Favorite token = {token}/> }} />
 
-       <Route exact path="/admin" render={() => {
+<Route exact path="/admin" render={() => {
         return <Admin token = {token}/> }} />
     </div>
   );

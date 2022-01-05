@@ -63,7 +63,7 @@ export default function Home() {
                </div>
 
                <input type="text" onChange={(e)=>{searchTarget(e)}} />
-          <button onClick={()=>{search()}}>ابحث</button>
+          <button onClick={()=>{search()}}>search</button>
             {/* <div >
           <input className="ptn-inpt" placeholder="search here .." value={result} onChange={onChange}/>
         </div>
