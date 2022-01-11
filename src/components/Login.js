@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import axios from "axios";
 
-export default function Login({setToken }) {
+export default function Login({setToken , Admin }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -27,22 +27,16 @@ export default function Login({setToken }) {
       });
 console.log(response.data)
       setToken(response.data.token);
-      // if (response.data.admin==true) {
-      //  history.push("/admin") 
-        
-      // }
-      // setToken(response.data.admin);
-
       
+      if (response.data.Admin==true) {
+       history.push("/admin") 
+        
+      }
+      // setToken(response.data.Admin);
     //   التوكن عشان ياخذ بيانات المستخدم ويحفظها داخل التوكن
     // بعد ماكانت قيمه التوكن فاضيه
-     
     history.push("/Home");
-    // if (response.data.admin==true) {
-    //   history.push("/admin") 
-       
-    //  }
-    //  setToken(response.data.admin);
+  
 
      
     } catch (error) {

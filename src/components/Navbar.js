@@ -3,9 +3,8 @@ import { Link } from "react-router-dom";
 import "../App.css"
 
 
-export default function Navbar({token , setToken }) {
+export default function Navbar({token , setToken , }) {
 
-    
     const logout = ()=>{
         setToken("")
     }

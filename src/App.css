@@ -1,7 +1,7 @@
 .navbar{
   display: flex;
   justify-content: center;
-  background-color: rgba(235, 226, 99, 0.63);
+  background-color: rgba(255, 238, 0, 0.932);
   height: 100px;
 }
 .all-navbar{
@@ -12,7 +12,7 @@
 }
   
 .nav-ptn{
-  color: rgb(250, 250, 248);
+  color: rgb(243, 243, 20);
   font-size: 15px;
   border-radius: 10px;
   padding: 10px;
@@ -23,13 +23,10 @@
   width: 550px;
   height: 400px;
   margin: 20px;
-  /* background-color: rgba(15, 65, 26, 0.774); */
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo3v_VzvcchvpwyDreXjlMWmATCIZDsmz4oQ&usqp=CAU");
+  background-image: url("https://images.pexels.com/photos/1322444/pexels-photo-1322444.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+ 
   margin: auto;
   border-radius: 20px;
-  /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOwFkKtwJ-J_cc50KtaX9CAXUe_00DJvQ-mA&usqp=CAU"); */
-  /* background-image: url("https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fposter1.net%2Fwp-content%2Fuploads%2F2019%2F08%2F9346.jpg"); */
-/* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXC3ts_MBiP7y3MBySTXLKs6QOxsw_DY4ofg&usqp=CAU"); */
   background-size: cover;
 }
 .ptn-inpt{
@@ -62,30 +59,33 @@
 }
 
 body{
-  background-color: #eee2ab;
-  /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo3v_VzvcchvpwyDreXjlMWmATCIZDsmz4oQ&usqp=CAU"); */
-  /* background-image: url("https://images.pexels.com/photos/9000159/pexels-photo-9000159.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"); */
+  background-image: url("https://images.pexels.com/photos/4709425/pexels-photo-4709425.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+ 
   /* background: hsla(64, 76%, 39%, 0.686); */
-  /* background-size: cover; 
-  mask-repeat: no-repeat; */
+  /* background-size: cover;  */
+  /* mask-repeat: no-repeat; */
 }
-/* .p-5{
-  font-size: large;
-} */
+
 .all-btn{
+  margin-top: auto;
   width: 600px;
   margin: auto;
   padding: 10px;
-  background-color: rgba(46, 61, 29, 0.705);
   color: rgb(250, 248, 248);
   font-size:xx-large;
   text-align: center;
+  background-image: url("https://images.pexels.com/photos/1322444/pexels-photo-1322444.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-size: cover;  
+   box-shadow: -7px 13px 69px 35px rgba(0,0,0,0.67);
+  -webkit-box-shadow: -7px 13px 69px 35px rgba(0,0,0,0.67);
+  -moz-box-shadow: -7px 13px 69px 35px rgba(0,0,0,0.67);
+  border-radius: 10px;
 
 }
 .btn-1{
   /* display: inline-block; */
   border-radius: 10px;
-  background-color: #99675869;
+  background-color: #9967589c;
   color: #FFFFFF;
   font-size: 28px;
   padding: 25px;
@@ -134,9 +134,10 @@ body{
 } 
 .qran{
   /* background-color: rgba(224, 211, 197, 0.568); */
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo3v_VzvcchvpwyDreXjlMWmATCIZDsmz4oQ&usqp=CAU");
-  /* background-size: cover;  */
-  /* mask-repeat: no-repeat; */
+  /* background-image: url("https://images.pexels.com/photos/4041287/pexels-photo-4041287.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"); */
+  background-image: url("https://images.pexels.com/photos/1322444/pexels-photo-1322444.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-size: cover; 
+  mask-repeat: no-repeat;
   font-size:x-large;
   padding: 120px;
   width: 590px;
@@ -155,6 +156,33 @@ body{
   background-color: rgba(224, 211, 197, 0.568);
   /* display: flex; */
   /* justify-content: center; */
+}
+.NameAllah{
+  width: 1150px;
+  margin-top: 500px;
+  margin: auto;
+  background-image: url("https://images.pexels.com/photos/1322444/pexels-photo-1322444.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+
+  
+
+  /* background-size: cover;  */
+  /* mask-repeat: no-repeat; */
+
+ font-size:larger;
+  text-align: center;
+  box-shadow: -38px -50px 258px 0px rgba(114, 41, 41, 0.75);
+  -webkit-box-shadow: -38px -50px 258px 0px rgba(114, 41, 41, 0.75);
+  -moz-box-shadow: -38px -50px 258px 0px rgba(114, 41, 41, 0.75);
+
+  column-count: 2;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-gap: 29px;
+  -webkit-column-gap: 29px;
+  -moz-column-gap: 29px;
+  column-rule: 1px ridge #cfbbbb;
+  -webkit-column-rule: 1px ridge #cfbbbb;
+  -moz-column-rule: 1px ridge #cfbbbb;
 }
 
 @media only screen and (max-width: 550px) {

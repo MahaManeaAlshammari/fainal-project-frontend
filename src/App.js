@@ -10,7 +10,7 @@ import ReedAthkar from "./components/ReedAthkar";
 import Counter from "./components/Counter";
 import Qoran from "./components/Qoran";
 import Favorite from"./components/Favorite";
-
+import NameAllah from "./components/NameAllah";
 
 
 
@@ -21,7 +21,7 @@ import Favorite from"./components/Favorite";
   return (
     <div >
       
-        <Navbar token={token} setToken={setToken} setAdmin={setAdmin}/>
+        <Navbar token={token} setToken={setToken} Admin={setAdmin}/>
         <Route exact path="/login"  render={()=>
            {return <Login setToken={setToken}/> ; }} />
         <Route exact path="/signUp" component={SignUp} />
@@ -42,8 +42,9 @@ import Favorite from"./components/Favorite";
        <Route exact path="/Favorite" render={() => {
         return <Favorite token = {token}/> }} />
 
-<Route exact path="/admin" render={() => {
-        return <Admin token = {token}/> }} />
+
+<Route exact path="/NameAllah" render={() => {
+        return <NameAllah token = {token}/> }} />
     </div>
   );
 }
