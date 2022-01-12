@@ -73,7 +73,7 @@ export default function ReedAthkar({ token ,Admin }) {
             <p className="name-css">{elem.description}
              <button onClick={()=>{addFavorite(elem._id)}}>  📌 </button> </p>
 
-             {!Admin==true ? <><p><input className="ptn-inpt" onChange={(e) => {changeAdmin(e);}}placeholder="add email"/></p>
+             {!Admin==true ? <><p><input className="ptn-inpt" onChange={(e) => {changeAdmin(e);}}placeholder="add athkar"/></p>
            <p>  <button onClick={()=>{addathkar(elem._id)}}>  اضافه </button> </p>
            <p>  <button onClick={()=>{deleetThkr(elem._id)}}>  حذف </button> </p>
            <p>  <button onClick={()=>{addathkar(elem._id)}}>  تعديل </button> </p>

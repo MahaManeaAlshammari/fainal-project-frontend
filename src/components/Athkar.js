@@ -18,6 +18,12 @@ export default function Athkar() {
       const bage4 = async(name)=>{
         history.push(`/${name}`)
       }
+      const bage5 = async(name)=>{
+        history.push(`/${name}`)
+      }
+      const bage6 = async(name)=>{
+        history.push(`/${name}`)
+      }
 
  
     return (
@@ -29,8 +35,8 @@ export default function Athkar() {
 
 
             <button onClick={()=>{bage4 ("NameAllah")}} className='btn-2'>اسماء الله الحسنى</button>
-            <button className='btn-2'>من دعاء الرسول</button>
-            <button className='btn-2'>ادعيه من القران</button>
+            <button onClick={()=>{bage5 ("DuaaRasol")}} className='btn-2'>من دعاء الرسول</button>
+            <button onClick={()=>{bage6 ("DuaaQoran")}} className='btn-2'>ادعيه من القران</button>
 
             <div className='all-btn-1'>
               <br></br>

@@ -11,6 +11,8 @@ import Counter from "./components/Counter";
 import Qoran from "./components/Qoran";
 import Favorite from"./components/Favorite";
 import NameAllah from "./components/NameAllah";
+import DuaaRasol from "./components/DuaaRasol";
+import DuaaQoran from "./components/DuaaQoran"
 
 
 
@@ -45,6 +47,12 @@ import NameAllah from "./components/NameAllah";
 
 <Route exact path="/NameAllah" render={() => {
         return <NameAllah token = {token}/> }} />
+
+<Route exact path="/DuaaRasol" render={() => {
+        return <DuaaRasol token = {token}/> }} />
+
+<Route exact path="/DuaaQoran" render={() => {
+        return <DuaaQoran token = {token}/> }} /> 
     </div>
   );
 }

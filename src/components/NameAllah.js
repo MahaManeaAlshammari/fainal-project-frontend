@@ -5,7 +5,7 @@ export default function NameAllah() {
   
     return (
         <div className='NameAllah'>
-
+            <br/>
 
              <p>الله: وهو الاسم الأعظم الذي تفرد به الحق سبحانه وخص به نفسه وجعله أول أسمائه، وأضافها كلها إليه فهو علم على ذاته سبحانه</p>
             <br/>

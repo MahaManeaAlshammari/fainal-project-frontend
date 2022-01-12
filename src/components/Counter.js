@@ -14,7 +14,7 @@ export default function Counter () {
     <div className="counter">
         <h1>اذكر الله</h1>
       <div className="buttons"> 
-        <div><button className="counter" onClick={()=>{add()}}> {counter} </button>
+        <div><button className="counter-ptn" onClick={()=>{add()}}> {counter} </button>
        <h4 className="count-" onClick={()=>{agin()}}>  🔁 </h4></div></div>
 
     </div>
