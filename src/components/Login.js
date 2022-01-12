@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import axios from "axios";
 
-export default function Login({setToken , Admin }) {
+export default function Login({setToken , setAdmin }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  
 
   const history = useHistory();
 //   تخدمت يوزهيستوري عشان ياخذ القيمه اللي بالانبوت ويمررها 
@@ -27,14 +28,17 @@ export default function Login({setToken , Admin }) {
       });
 console.log(response.data)
       setToken(response.data.token);
-      
-      if (response.data.Admin==true) {
-       history.push("/admin") 
+      setAdmin(response.data.data.Admin)
+
+
+      // if (response.data.data.Admin==true) {
+      //  history.push("/admin") 
         
-      }
+      // }
       // setToken(response.data.Admin);
     //   التوكن عشان ياخذ بيانات المستخدم ويحفظها داخل التوكن
     // بعد ماكانت قيمه التوكن فاضيه
+    
     history.push("/Home");
   
 

@@ -23,16 +23,16 @@ import DuaaQoran from "./components/DuaaQoran"
   return (
     <div >
       
-        <Navbar token={token} setToken={setToken} Admin={setAdmin}/>
+        <Navbar token={token} setToken={setToken}/>
         <Route exact path="/login"  render={()=>
-           {return <Login setToken={setToken}/> ; }} />
+           {return <Login setToken={setToken} setAdmin={setAdmin} /> ; }} />
         <Route exact path="/signUp" component={SignUp} />
         <Route exact path= "/Athkar" render={() => {
         return <Athkar token = {token} setToken = {setToken} userId={"userId"}/> }} />
            <Route exact path= "/home" render={() => (<Home />)}/>
 
            <Route exact path= "/ReedAthkar/:name" render={() => {
-        return <ReedAthkar token = {token}/> }} />
+        return <ReedAthkar token = {token} Admin ={Admin}/> }} />
 
       <Route exact path="/Counter" render={() => {
         return <Counter token = {token}/> }} />
