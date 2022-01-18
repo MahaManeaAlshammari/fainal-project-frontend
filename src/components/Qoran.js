@@ -1,6 +1,7 @@
 import React, { useEffect ,useState } from 'react'
 import axios from "axios";
 import { useParams } from "react-router-dom";
+import "../style/qoran.css"
 
 export default function Qoran({token}) {
 const [qoran, setQoran] = useState([])
@@ -14,10 +15,10 @@ useEffect(async () => {
     );
     setQoran(view.data);
  
-}, []);
+   }, []);
 
     return (
-        <div>
+        <div className='qq'>
        {qoran.map((elem,i)=>{
            return(<div className='q22'>
                <p className='qran'>{elem.description}</p>

@@ -1,0 +1,53 @@
+
+.all-btn{
+    margin: 20px;
+    margin-left: 30%;
+  
+    /* margin-top: auto; */
+    width: 600px;
+    /* margin: auto; */
+    padding: 10px;
+    color: rgb(250, 248, 248);
+    font-size:xx-large;
+    text-align: center;
+    background-image: url("https://images.pexels.com/photos/1322444/pexels-photo-1322444.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-size: cover;  
+     box-shadow: -7px 13px 69px 35px rgba(0,0,0,0.67);
+    -webkit-box-shadow: -7px 13px 69px 35px rgba(0,0,0,0.67);
+    -moz-box-shadow: -7px 13px 69px 35px rgba(0,0,0,0.67);
+    border-radius: 10px;
+  
+  }
+  .btn-1{
+    width: 500px;
+    border-radius: 10px;
+    background-color: #9967589c;
+    color: #FFFFFF;
+    font-size: 28px;
+    padding: 25px;
+    
+    cursor: pointer;
+    margin: 5px;
+  
+   
+  }
+  .btn-2{
+    /* display: inline-block; */
+    border-radius: 10px;
+    padding: 20px;
+    width: 150px;
+    color: #3a2626;
+    font-size: large;
+    background-color: rgba(243, 240, 237, 0.568);
+  
+    border-radius: 78px 77px 0px 0px;
+    -webkit-border-radius: 78px 78px 0px 0px;
+    -moz-border-radius: 78px 78px 0px 0px;
+  }
+
+  @media only screen and (max-width: 900px) {
+    .all-btn {
+        grid-template-columns: 1fr ;
+        background-color: #c5500c;
+    }
+  }

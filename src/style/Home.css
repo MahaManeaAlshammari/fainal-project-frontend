@@ -1,0 +1,20 @@
+.home-1{
+    background-color: rgba(197, 52, 52, 0.514);
+    margin: 50px;
+  
+    height: 150px;
+    width: 170px;
+    padding: 10px;
+    text-align: center;
+    text-shadow: 0 0 3px #c09393, 0 0 5px #b7d44e;
+    font-size: x-large;
+    border-radius: 100px;
+  
+  }
+
+  @media only screen and (max-width: 900px) {
+    .Home {
+        grid-template-columns: 1fr ;
+        background-color: #c5500c;
+    }
+  }

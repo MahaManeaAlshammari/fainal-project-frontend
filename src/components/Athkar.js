@@ -1,5 +1,5 @@
 import React from 'react'
-import "../App.css"
+import "../style/Athkar.css"
 import {useHistory} from "react-router-dom";
 
 

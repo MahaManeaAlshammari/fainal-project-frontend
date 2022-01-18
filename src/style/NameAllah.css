@@ -1,0 +1,22 @@
+
+.NameAllah{
+  
+    width: 1150px;
+    margin-top: 500px;
+    margin: auto;
+    font-size:x-large;
+    text-align: center;
+    /* margin: 20px; */
+    text-shadow: 8px 28px 50px rgba(33,34,11,1);
+    box-shadow: -2px 21px 33px 13px rgba(119,120,70,0.67);
+    -webkit-box-shadow: -2px 21px 33px 13px rgba(119,120,70,0.67);
+    -moz-box-shadow: -2px 21px 33px 13px rgba(119,120,70,0.67);
+    
+  }
+
+  @media only screen and (max-width: 900px) {
+    .NameAllah {
+        grid-template-columns: 1fr ;
+        background-color: #c5500c;
+    }
+  }

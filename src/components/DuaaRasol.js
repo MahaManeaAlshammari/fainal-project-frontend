@@ -1,4 +1,5 @@
 import React from 'react'
+import "../style/DuaaRasol.css"
 
 export default function DuaaRasol() {
     return (

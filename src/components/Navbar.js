@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-import "../App.css"
-
+// import "../App.css"
+import "../style/navbar.css"
 
 export default function Navbar({token , setToken , }) {
 
@@ -10,15 +10,15 @@ export default function Navbar({token , setToken , }) {
     }
     const checkToken = ()=> {
         if (token) {
-            return <>
+            return <div>
             <ul><Link className='nav-ptn' to="/Home">الرئيسية</Link></ul>
             <ul><Link className='nav-ptn' to="/Athkar">اذكار اليوم والليله</Link></ul>
             <ul><Link className='nav-ptn' to="/Favorite">مفضلاتي</Link></ul>
             
             <ul><Link className='nav-ptn' onClick={()=>{logout()}}  to="/login">تسجيل خروج</Link></ul>
-            </>
+            </div>
         }else{
-            return <>
+            return < >
             <ul><Link className='nav-ptn' to="/login">تسجيل دخول</Link></ul>
             <ul><Link className='nav-ptn' to="/signup">تسجيل</Link></ul>
             {/* <ul><Link className='nav-ptn' to="/">ADMEN</Link></ul> */}
@@ -30,5 +30,7 @@ export default function Navbar({token , setToken , }) {
         <div className='navbar'>
             {checkToken()}
             </div>
+            
     )
+    
 }

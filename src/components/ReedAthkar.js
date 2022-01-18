@@ -1,6 +1,7 @@
 import React , {useEffect , useState } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
+import "../style/ReedAthkar.css"
 
 
 export default function ReedAthkar({ token ,Admin }) {
@@ -9,8 +10,8 @@ export default function ReedAthkar({ token ,Admin }) {
     const [deletThkr, setDeletThkr] = useState("")
     const [description, setdescription] = useState("")
     const [namee, setnamee] = useState("")
-
     const [type, settype] = useState("")
+    const [updateathkarr, setupdateathkarr] = useState("")
 
     // عرفت ستيت تخزن قيمه البيانات اللي جت من المونقو
     const{name} = useParams()
@@ -46,10 +47,10 @@ export default function ReedAthkar({ token ,Admin }) {
     const changeAdmin = (e) => {
       setdescription(e.target.value);
     };
-    const changeAdminN = (e) => {
+    const changeAdmiName = (e) => {
       setnamee(e.target.value);
     };
-    const changeAdminT = (e) => {
+    const changeAdmiType = (e) => {
       settype(e.target.value);
     };
     
@@ -59,32 +60,16 @@ export default function ReedAthkar({ token ,Admin }) {
             headers: { authorization: "Bearer " + token },
           }
         );
-        const copy = [...reedThkr]
-        setReedThkr(copy)
+        
+        setReedThkr(result.data)
         console.log("dataAdmit",result.data);
 
       } catch (error) {
       }
     };
-    // const deleetThkr= async (id, index) => {
-    //   const result = await axios.delete(`http://localhost:5000/athkar/${id}`, {
-    //     headers: { authorization: "Bearer " + token },
-    //   });
-    //   console.log("delete" ,result.data);
-    //   // setDeletThkr(result.data);
-    //   // console.log("id : ",id  ,"token : ",token);
-    //   if (deleetThkr.data) {
-    //     const copyThker = [...reedThkr];
-    //     console.log("ooooooooooooooo");
-    //     copyThker.splice(index, 1);
-    //     setReedThkr(copyThker);
-    //   }
-    // }
     
-
-
     const deleetThkr = async (id, index) => {
-      console.log("jjjjjjjjjjj");
+      console.log("nnnnn");
       const deletes = await axios.delete(`http://localhost:5000/athkar/${id}`,{
         headers: { authorization: "Bearer " + token },
   
@@ -92,36 +77,52 @@ export default function ReedAthkar({ token ,Admin }) {
        console.log("hhhhhh");
       if (deletes.data) {
         const copyThker = [...reedThkr];
-        console.log("ooooooooooooooo");
+        console.log("oohhhh");
         copyThker.splice(index, 1);
         setReedThkr(copyThker);
       }
     }
       
-  
+    const changupdate = (e) => {
+      setupdateathkarr(e.target.value);
+    };
+  //   للتعديل  
+    const updateathkarar = async (id)=>{
+      try {
+        const thkrUpdate = await axios.put(`http://localhost:5000/athkar/${id}`,{
+          description:updateathkarr
+        },{
+          headers:{authorization:"Bearer " + token},
+        },);
+        //console.log("iiui",thkrUpdate);
+        setReedThkr(thkrUpdate.data)
+      } catch (error) {
+        console.log("erorr");
+      }
+    };
 
 
-    
 
     return (
-      <div>
+      <div className="admin">
         
         {Admin==true ? <>
-        <input  onChange={(e) => {changeAdmin(e);}}placeholder="add athkar"/>
-        <input  onChange={(e) => {changeAdminN(e);}}placeholder="nn"/>
-        <input  onChange={(e) => {changeAdminT(e);}}placeholder="tt"/>
+       <p> <input className="nn-input" onChange={(e) => {changeAdmin(e);}}placeholder="add athkar"/></p>
+       <p> <input className="nn-input" onChange={(e) => {changeAdmiName(e);}}placeholder="name"/></p>
+       <p> <input className="nn-input" onChange={(e) => {changeAdmiType(e);}}placeholder="type"/></p>
 
-           <p>  <button onClick={()=>{addathkar(reedThkr._id)}}>  اضافه </button> </p>
+       <p>  <button onClick={()=>{addathkar(reedThkr._id)}}>  اضافه </button> </p>
           
 
            </> :""}
     {reedThkr.map((elem,i)=>{
-        return(<div>
+        return(<div className="RR">
             <p className="name-css">
                 
              {Admin==true ? <>
-           <button onClick={()=>{deleetThkr(elem._id)}}>  حذف </button> 
-           <button onClick={()=>{addathkar(elem._id)}}>  تعديل </button> 
+         <p> <button onClick={()=>{deleetThkr(elem._id)}}> 🗑 حذف </button> 
+           <button onClick={()=>{updateathkarar(elem._id)}}> 📝 تعديل </button> 
+           <input onChange={(e)=>{changupdate(e);}}placeholder="update"/></p> 
 
            </> :""}
               

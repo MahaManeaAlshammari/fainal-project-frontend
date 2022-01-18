@@ -1,7 +1,7 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom';
-import "../App.css"
-
+// import "../App.css"
+import "../style/Home.css"
 
 
 export default function Home() {
@@ -9,8 +9,7 @@ export default function Home() {
     const [searchArr, setSearchArr] = ("");
     const [tkr, settkr] = ("")
 
- 
-    const login=()=>{
+     const login=()=>{
         hestory.push("/login")
     }
 
@@ -33,8 +32,8 @@ export default function Home() {
                <p> اهلا بك   </p>
                </div>
 
-               <input type="text" onChange={(e)=>{searchTarget(e)}} />
-          <button onClick={()=>{search()}}>بحث</button>
+          <p> <input type="text" onChange={(e)=>{searchTarget(e);}} /></p>
+         <p> <button onClick={()=>{search()}}>بحث</button></p>
             
                </div>
     )

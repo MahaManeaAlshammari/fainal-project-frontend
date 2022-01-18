@@ -1,4 +1,5 @@
 import React from 'react'
+import "../style/DuaaQoran.css"
 
 export default function DuaaQoran() {
     return (

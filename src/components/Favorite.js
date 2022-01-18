@@ -1,5 +1,6 @@
 import React, { useEffect ,useState } from 'react'
 import axios from "axios";
+import "../style/Favorite.css"
 
 
 export default function Favorite({token}) {
