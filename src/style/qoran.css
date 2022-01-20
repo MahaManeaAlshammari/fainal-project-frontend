@@ -3,7 +3,6 @@
     margin: 20px;
     margin-left: 20%;
   
-    background-image: url("https://images.pexels.com/photos/1322444/pexels-photo-1322444.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
     background-size: cover; 
     mask-repeat: no-repeat;
     font-size:x-large;
@@ -21,17 +20,21 @@
   
   }
   .qran-1{
-    /* text-align: center;  */
-    font-size:x-large;
+   text-align: center;  
+    font-size:x-large; 
     margin: auto;
-    background-color: rgba(224, 211, 197, 0.568);
-    /* display: flex; */
-    /* justify-content: center; */
+    background-color: rgba(253, 250, 247, 0.568);
+    display: flex; 
+    justify-content: center;
+    text-align: center;
+  }
+  @media only screen and (max-width: 900px) {
+    .qran{
+      width: 299px;
+      margin-left: 5px;
+            /* height: 10px; */
+      padding: 43px;
   }
   
-  @media only screen and (max-width: 900px) {
-    .qq {
-        grid-template-columns: 1fr ;
-        background-color: #c5500c;
-    }
+
   }

@@ -1,13 +1,15 @@
 
 .counter{
-    background-image: url("https://images.pexels.com/photos/1322444/pexels-photo-1322444.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-image: url("https://images.pexels.com/photos/1058829/pexels-photo-1058829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
     /* background-color: rgba(224, 211, 197, 0.568); */
     text-align: center;
     border-radius: 7px;
-    margin:auto;
-    color: #255316e7;
+    margin-top: 15px;  
+    margin-left: auto;
+    margin-bottom: auto; 
+    margin-right: auto; 
     font-size: 40px;
-    width: 500px;
+    width: 510px;
   
     box-shadow: -2px 21px 33px 13px rgba(119,120,70,0.67);
   -webkit-box-shadow: -2px 21px 33px 13px rgba(119,120,70,0.67);
@@ -15,17 +17,22 @@
   }
   .count-{
     color: #255316e7;
-  
+    margin-right: 250px;
   } 
   .counter-ptn{
     font-size: 40px;
-  
+  margin-right: 250px;
+  margin-top: 50px;
   }
+.kkk{
+  margin-top: auto;
+  color: rgb(33, 51, 19);
+  margin-right: 250px;
 
+}
   
   @media only screen and (max-width: 900px) {
     .counter {
         grid-template-columns: 1fr ;
-        background-color: #c5500c;
     }
   }

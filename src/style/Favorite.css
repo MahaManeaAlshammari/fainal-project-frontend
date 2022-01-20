@@ -1,22 +1,66 @@
 
 .name-css{
     border-radius: 10px;
-    background-color: rgba(243, 229, 34, 0.541);
+    background-color: rgba(16, 59, 18, 0.767);
     font-size:xx-large;
     text-align: center;
     width: 700px;
-  
-    margin: 17%;
-    margin-left: 50%;
-    /* padding: 50px 30px 50px 65px; */
-  
-    /* margin-top: 50% 50% 50% 50% ; */
-  
-  }
+    padding: 20px 30px 50px 75px;
+    margin: 30% 10% 4% 0% ;
 
+    box-shadow: -2px 21px 33px 13px rgba(119,120,70,0.67);
+    -webkit-box-shadow: -2px 21px 33px 13px rgba(119,120,70,0.67);
+    -moz-box-shadow: -2px 21px 33px 13px rgba(119,120,70,0.67);
+    margin-left: -269px;
+  }
+  .name1-css{
+  border-radius: 10px;
+  background-color: rgba(16, 59, 18, 0.767);
+  font-size: xx-large;
+  text-align: center;
+  width: 700px;
+  padding: 20px 30px 50px 75px;
+  /* margin: 30% 10% 4% 0%; */
+  box-shadow: -2px 21px 33px 13px rgb(119 120 70 / 67%);
+  margin: 138px;
+  margin-top: 68px;
+  -webkit-box-shadow: -2px 21px 33px 13px rgb(119 120 70 / 67%);
+  -moz-box-shadow: -2px 21px 33px 13px rgba(119,120,70,0.67);
+  /* margin-left: -269px; */
+}
+.nammme {
+  border-radius: 10px;
+  background-color: rgba(16, 59, 18, 0.767);
+  font-size: xx-large;
+  text-align: center;
+  width: 700px;
+  padding: 20px 30px 50px 75px;
+  margin: 30% 10% 4% 0%;
+  box-shadow: -2px 21px 33px 13px rgb(119 120 70 / 67%);
+  -webkit-box-shadow: -2px 21px 33px 13px rgb(119 120 70 / 67%);
+  -moz-box-shadow: -2px 21px 33px 13px rgba(119,120,70,0.67);
+  margin-left: -29px;
+  margin-top: 55px;
+  margin-left: 95px;
+}
   @media only screen and (max-width: 900px) {
     .name-css {
-        grid-template-columns: 1fr ;
-        background-color: #c5500c;
+      padding: 10px;
+      margin-left: -106px;
+      /* grid-template-columns: 1fr; */
+      width: 331px;
+    }
+    .nammme{
+      padding: 10px;
+      margin-left: 2px;
+      /* grid-template-columns: 1fr; */
+      width: -260px;
+      
+    }
+    .name1-css {
+      padding: 10px;
+      margin-left: 2px;
+      /* grid-template-columns: 1fr; */
+      width: -270px;
     }
   }

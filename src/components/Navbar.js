@@ -11,11 +11,13 @@ export default function Navbar({token , setToken , }) {
     const checkToken = ()=> {
         if (token) {
             return <div>
-            <ul><Link className='nav-ptn' to="/Home">الرئيسية</Link></ul>
-            <ul><Link className='nav-ptn' to="/Athkar">اذكار اليوم والليله</Link></ul>
-            <ul><Link className='nav-ptn' to="/Favorite">مفضلاتي</Link></ul>
+                <ul className='ul'>
+            <li className='li'><Link  to="/Home">الرئيسية</Link></li>
+            <li className='li'><Link  to="/Athkar">اذكار اليوم والليله</Link></li>
+            <li className='li'><Link  to="/Favorite">مفضلاتي</Link></li>
             
-            <ul><Link className='nav-ptn' onClick={()=>{logout()}}  to="/login">تسجيل خروج</Link></ul>
+            <li className='li'><Link  onClick={()=>{logout()}}  to="/login">تسجيل خروج</Link></li>
+            </ul>
             </div>
         }else{
             return < >

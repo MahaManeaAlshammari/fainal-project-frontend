@@ -24,7 +24,7 @@ export default function Signup() {
   
    
     const onclickSignup = async()=>{
-        const res= await axios.post("http://localhost:5000/signUp", {
+        const res= await axios.post(`${process.env.REACT_APP_BACKEND_URL}/signUp`, {
         name , email ,  password
         // اقدر احط القيمه حقت الكي بدون الكي نفسه اذا كان الكي
         // والقميه نفس بعض

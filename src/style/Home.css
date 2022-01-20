@@ -1,20 +1,38 @@
 .home-1{
-    background-color: rgba(197, 52, 52, 0.514);
-    margin: 50px;
-  
-    height: 150px;
-    width: 170px;
+    background-image: url("https://images.pexels.com/photos/1058829/pexels-photo-1058829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    margin-top: 3%;     
+  margin-left:auto ;
+  margin-bottom: auto;
+  margin-right: auto;
+    height: 450px;
+    width: 950px;
     padding: 10px;
     text-align: center;
-    text-shadow: 0 0 3px #c09393, 0 0 5px #b7d44e;
     font-size: x-large;
-    border-radius: 100px;
-  
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    box-shadow: -2px 21px 33px 13px rgba(119,120,70,0.67);
+    -webkit-box-shadow: -2px 21px 33px 13px rgba(119,120,70,0.67);
+    -moz-box-shadow: -2px 21px 33px 13px rgba(119,120,70,0.67);
   }
+  .hom4{
+    text-shadow: 0 0 3px #b3c41d, 0 0 5px #b7d44e;
+    margin-right: 50%;
+    font-size:xx-large;
+    /* color: yellow;
+  text-align: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
 
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  }
+  
   @media only screen and (max-width: 900px) {
     .Home {
-        grid-template-columns: 1fr ;
-        background-color: #c5500c;
+      margin: -1px;
+    }
+    .home-1 {
+      width: 381px;
     }
   }

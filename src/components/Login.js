@@ -22,7 +22,7 @@ export default function Login({setToken , setAdmin }) {
 
   const onclickLogin = async () => {
     try {
-      const response = await axios.post("http://localhost:5000/login", {
+      const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/login`, {
         email , password
          // اقدر احط القيمه حقت الكي بدون الكي نفسه اذا كان الكي
         // والقميه نفس بعض
@@ -41,11 +41,8 @@ console.log(response.data)
     // بعد ماكانت قيمه التوكن فاضيه
     
     history.push("/Home");
-  
-
-     
     } catch (error) {
-      console.log(error.response.data);
+      console.log(error);
     }
   };
   return (

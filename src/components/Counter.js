@@ -12,7 +12,7 @@ export default function Counter () {
 
   return (
     <div className="counter">
-        <h1>اذكر الله</h1>
+        <h1 className="kkk">اذكر الله</h1>
       <div className="buttons"> 
         <div><button className="counter-ptn" onClick={()=>{add()}}> {counter} </button>
        <h4 className="count-" onClick={()=>{agin()}}>  🔁 </h4></div></div>

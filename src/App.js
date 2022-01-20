@@ -12,13 +12,18 @@ import Qoran from "./components/Qoran";
 import Favorite from"./components/Favorite";
 import NameAllah from "./components/NameAllah";
 import DuaaRasol from "./components/DuaaRasol";
-import DuaaQoran from "./components/DuaaQoran"
+import DuaaQoran from "./components/DuaaQoran";
+import"./style/navbar.css"
+require("dotenv").config();
+
 
 
 
   export default function App() { 
     const [token, setToken] = useState("")
     const [Admin, setAdmin] = useState("")
+    console.log("ghj :",process.env.REACT_APP_BACKEND_URL);
+
 
   return (
     <div >

@@ -45,7 +45,7 @@ export default function Athkar() {
             <button onClick={()=>{bage ("evining")}} className='btn-1'>اذكار المساء</button>
             <button onClick={()=>{bage ("sleep")}} className='btn-1'>اذكار النوم</button>
             <button onClick={()=>{bage ("wakingup")}} className='btn-1'>اذكار الاستيقاظ</button>
-            <button onClick={()=>{bage ("daily")}} className='btn-1'>الورد اليومي</button>
+            <button onClick={()=>{bage ("azan")}} className='btn-1'> اذكار الاذان</button>
             <button onClick={()=>{bage ("Prayer")}} className='btn-1'>اذكار الصلاة</button>
             </div>
            </div>    

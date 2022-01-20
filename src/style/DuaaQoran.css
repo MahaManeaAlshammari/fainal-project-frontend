@@ -12,7 +12,8 @@
 
   @media only screen and (max-width: 900px) {
     .DuaaQoran {
+        width: auto;
+        margin: 15px;
         grid-template-columns: 1fr ;
-        background-color: #c5500c;
     }
   }

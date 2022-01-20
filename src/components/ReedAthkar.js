@@ -12,13 +12,16 @@ export default function ReedAthkar({ token ,Admin }) {
     const [namee, setnamee] = useState("")
     const [type, settype] = useState("")
     const [updateathkarr, setupdateathkarr] = useState("")
+ 
+
+
 
     // عرفت ستيت تخزن قيمه البيانات اللي جت من المونقو
     const{name} = useParams()
 
     useEffect(async () => {
         console.log(name);
-      try { const reed = await axios.get(`http://localhost:5000/ReedAthkar/${name}`,{
+      try { const reed = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/ReedAthkar/${name}`,{
             headers: { authorization: "Bearer " + token },
             // عرفت كونست يربط الفرونت مع المونقو
           }
@@ -34,7 +37,7 @@ export default function ReedAthkar({ token ,Admin }) {
 
     const addFavorite = async (id) => {
       try {
-        const result = await axios.post(`http://localhost:5000/Favorite/${id}`,{},{
+        const result = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/Favorite/${id}`,{},{
             headers: { authorization: "Bearer " + token },
           }
         );
@@ -56,7 +59,7 @@ export default function ReedAthkar({ token ,Admin }) {
     
     const addathkar = async (id) => {
       try {
-        const result = await axios.post(`http://localhost:5000/athkar`,{namee:name , description ,type },{
+        const result = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/athkar`,{namee:name , description ,type },{
             headers: { authorization: "Bearer " + token },
           }
         );
@@ -70,7 +73,7 @@ export default function ReedAthkar({ token ,Admin }) {
     
     const deleetThkr = async (id, index) => {
       console.log("nnnnn");
-      const deletes = await axios.delete(`http://localhost:5000/athkar/${id}`,{
+      const deletes = await axios.delete(`${process.env.REACT_APP_BACKEND_URL}/athkar/${id}`,{
         headers: { authorization: "Bearer " + token },
   
        });
@@ -89,7 +92,7 @@ export default function ReedAthkar({ token ,Admin }) {
   //   للتعديل  
     const updateathkarar = async (id)=>{
       try {
-        const thkrUpdate = await axios.put(`http://localhost:5000/athkar/${id}`,{
+        const thkrUpdate = await axios.put(`${process.env.REACT_APP_BACKEND_URL}/athkar/${id}`,{
           description:updateathkarr
         },{
           headers:{authorization:"Bearer " + token},
@@ -102,22 +105,23 @@ export default function ReedAthkar({ token ,Admin }) {
     };
 
 
-
     return (
-      <div className="admin">
+      
+      <div className="gg">
         
         {Admin==true ? <>
+          <div className="admin">
        <p> <input className="nn-input" onChange={(e) => {changeAdmin(e);}}placeholder="add athkar"/></p>
        <p> <input className="nn-input" onChange={(e) => {changeAdmiName(e);}}placeholder="name"/></p>
        <p> <input className="nn-input" onChange={(e) => {changeAdmiType(e);}}placeholder="type"/></p>
 
-       <p>  <button onClick={()=>{addathkar(reedThkr._id)}}>  اضافه </button> </p>
+       <p>  <button className="bb" onClick={()=>{addathkar(reedThkr._id)}}>🔂اضافه </button> </p>
           
-
+       </div>
            </> :""}
     {reedThkr.map((elem,i)=>{
         return(<div className="RR">
-            <p className="name-css">
+            <p className="nammme">
                 
              {Admin==true ? <>
          <p> <button onClick={()=>{deleetThkr(elem._id)}}> 🗑 حذف </button> 
@@ -127,12 +131,13 @@ export default function ReedAthkar({ token ,Admin }) {
            </> :""}
               
               {elem.description}            
-             <button onClick={()=>{addFavorite(elem._id)}}>  📌 </button>  
+             <a onClick={()=>{addFavorite(elem._id)}}>  💛 </a>  
            
             </p>
 
         </div>)
     })}
+    
       </div>
     );
   }

@@ -16,7 +16,8 @@
 
   @media only screen and (max-width: 900px) {
     .NameAllah {
-        grid-template-columns: 1fr ;
-        background-color: #c5500c;
+        width: auto;
+        margin: 15px;
+        grid-template-columns: 1fr;
     }
   }

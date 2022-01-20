@@ -1,41 +1,64 @@
 .admin{
-    width: 500px;
-    height: 250px;
-    background-image: url("https://images.pexels.com/photos/1322444/pexels-photo-1322444.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
-    margin: auto;
-    border-radius: 50px; 
+    /* width: 500px;
+    height: 250px; */
+    background-image: url("https://images.pexels.com/photos/1058829/pexels-photo-1058829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+     margin: auto;
+    border-radius: 20px;  
+   
+    width: 450px;
+    height: 300px;
+    /* margin: 20px; */
+
+    box-shadow: -2px 21px 33px 13px rgba(119,120,70,0.67);
+    -webkit-box-shadow: -2px 21px 33px 13px rgba(119,120,70,0.67);
+    -moz-box-shadow: -2px 21px 33px 13px rgba(119,120,70,0.67);
   } 
   
 .nn-input{
-    /* margin: 20px; */
-    /* margin-left: 30%;  */
-    /* margin-top: auto; */
-    width: 300px;
-    height: 15px;
-    margin: auto;
+    width: 120px;
+    /* height: 8px; */
+    /* margin: auto; */
     padding: 10px;
     color: rgb(12, 12, 12);
-    font-size:xx-large;
     text-align: center;
-    background-size: cover;  
-    border-radius: 10px;
+    border-radius: 5px;
+    margin-left: 143px;
+    margin-bottom: 3%;
+   
+
   } 
-  .name-css{
-    border-radius: 10px;
-    background-color: rgba(243, 229, 34, 0.541);
-    font-size:xx-large;
-    text-align: center;
-    width: 700px;
+  .gg{
+    margin: 4px;
+    padding: 20px 10px 20px 90px;
+    }
+    .bb{
+      width: 70px;
+      height: 20px;
+      margin-left: 178px;
+    }
+ /* .RR{
+  color: #faf8f6;
+  text-align: center;
+  padding: 20px 10px 20px 90px;
+  border-radius: 50px;  
+margin-top: 1500px;
+margin: auto;
+}  */
   
-    margin: 17%;
-    margin-left: 50%;
-    /* padding: 50px 30px 50px 65px; */
-    /* margin-top: 50% 50% 50% 50% ; */
-  }
 
   @media only screen and (max-width: 900px) {
+   
+    .nn-input{
+        margin-top: 38px;
+        margin-left: 16px;
+    }
+    .admin{
+      height: 376px;
+              width: 354px;
+              
+    margin-left: -54px
+    }
     .RR {
         grid-template-columns: 1fr ;
-        background-color: #c5500c;
     }
   }

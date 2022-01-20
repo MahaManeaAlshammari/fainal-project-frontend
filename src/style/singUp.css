@@ -3,11 +3,15 @@
     width: 550px;
     height: 400px;
     margin: 20px;
-    background-image: url("https://images.pexels.com/photos/1322444/pexels-photo-1322444.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-image: url("https://images.pexels.com/photos/1058829/pexels-photo-1058829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
    
     margin: auto;
     border-radius: 20px;
     background-size: cover;
+
+    box-shadow: -2px 21px 33px 13px rgba(119,120,70,0.67);
+    -webkit-box-shadow: -2px 21px 33px 13px rgba(119,120,70,0.67);
+    -moz-box-shadow: -2px 21px 33px 13px rgba(119,120,70,0.67);
   }
   .ptn-inpt{
     width: 300px;
@@ -29,7 +33,6 @@
   @media only screen and (max-width: 900px) {
     .signup {
         grid-template-columns: 1fr ;
-        background-color: #c5500c;
     }
   }
   
